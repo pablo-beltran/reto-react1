@@ -5,6 +5,7 @@ function App() {
 
   const [count, setCount] = useState(0)
   const [color, setColor] = useState('')
+  const [turno, setTurno] = useState(false)
 
   const colorGenerator = () => {
     let hexa = '#'
@@ -13,7 +14,14 @@ function App() {
       const randomElement = randomElements[Math.floor(Math.random()*randomElements.length)];
       hexa += randomElement 
     }
-    setColor(hexa)
+    if(turno){
+      setColor(hexa)
+      setTurno(!turno)
+    }
+    else{
+      setColor('#FFFFFF')
+      setTurno(!turno)
+    }
   }
 
   const style ={
