@@ -1,16 +1,27 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .centrar-boton{
   height: 100vh;
   display: flex;
   place-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.contador{
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+  border-radius: 1px;
 }
 
 .boton{
-  background-color: #F0F0F0;
+  background-color: #bbb3b3;
   padding: 10px;
   font-size: 20px;
-  border: 0px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 

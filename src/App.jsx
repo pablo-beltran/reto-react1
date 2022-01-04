@@ -35,12 +35,15 @@ function App() {
   return (
     <div style={style}>
       <div className='centrar-boton'>
+        <p className='contador'>
+          {count}
+        </p>
         <p>
           <button 
             className='boton'
             type="button" 
             onClick={() => setCount((count) => count + 1)}>
-            contador: {count}
+            contador
           </button>
         </p>
       </div>
